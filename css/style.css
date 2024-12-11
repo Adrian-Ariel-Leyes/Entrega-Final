@@ -1,104 +1,255 @@
-/*reset de css/reseteo del codigo*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header{
-    background-color: black;
-    padding: 10px;
-    text-align: center;
-    border-bottom: 5px solid blue;
+body {
+  background: radial-gradient(circle, rgb(0, 255, 255) 0%, rgb(17, 0, 128));
+  font-family: "Bokor", system-ui;
+  background-color: rgb(0, 255, 255);
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
 }
 
-body{
-    background-color: aqua;
-    box-sizing: border-box;
-    text-align: center;
-    color: black;
+header {
+  display: flex;
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+}
+header div {
+  display: flex;
+  justify-content: center;
+}
+header div .img_logo {
+  border: blue 5px solid;
+  border-radius: 50px;
+  padding: 2px;
+  width: 250px;
+}
+header div .img_logo:hover {
+  border: white 5px solid;
+}
+header h1 {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 35%;
+  padding: 20px;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+  padding: 20px;
+}
+header nav ul li {
+  padding: 10px;
+  text-align: center;
+  margin: 5px;
+  display: inline-block;
+}
+header nav ul li a {
+  display: flex;
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+  border-radius: 35px;
+  background-color: lightblue;
+  text-align: center;
+}
+header nav ul li a:hover {
+  background-color: blue;
+  color: white;
+  border-radius: 20px;
 }
 
-h1{
-    font-family: "Bokor", system-ui;
-    text-align: center;
-    padding: 2px;
-    color: white;
-    margin: 20px;
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+form input {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+  width: 50%;
+}
+form button {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: lightblue;
+  color: black;
+}
+form button:hover {
+  background-color: blue;
+  color: white;
 }
 
-h2{
-    font-family: "Bokor", system-ui;
-    text-align: center;
-    color: white;
-    padding: 2px;
-    font-size: 20px;
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section p {
+  font-size: 20px;
+  margin: 20px;
+  padding: 10px;
 }
 
-p{
-    padding: 10px;
-    line-height: 2;
-    font-family: 'Times New Roman', Times, serif;
+main {
+  text-align: center;
+}
+main div img {
+  width: 300px;
+  animation-name: aparecer;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+main .contenedor-compras {
+  width: 50%;
+  margin: 40px auto;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+main .contenedor-compras .producto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+main .contenedor-compras .producto img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+main .contenedor-compras .producto .producto-info {
+  width: 70%;
+  padding: 20px;
+}
+main .contenedor-compras .producto .producto-info h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+main .contenedor-compras .producto .producto-info p {
+  text-align: center;
+  font-size: 35px;
+  margin: 20px;
+  padding: 10px;
+}
+main .contenedor-compras .producto .producto-info .producto-precio {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+main .contenedor-compras .producto .botones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .contenedor-compras .producto .botones button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+main .contenedor-compras .producto .botones button:hover {
+  background-color: #3e8e41;
+}
+main .contenedor-compras .botones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .contenedor-compras .botones button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+main .contenedor-compras .botones button:hover {
+  background-color: #3e8e41;
+}
+main section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main section p {
+  font-size: 20px;
+  margin: 20px;
+  padding: 10px;
 }
 
-footer{ 
-    background-color: black;
-    padding: 20px;
-    margin: 0 auto;
-    text-align: center;
-    border-top: 5px solid blue;
+footer {
+  display: grid;
+  min-height: 5vh;
+  text-align: center;
+  background-color: black;
+}
+footer div a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+footer div a:hover {
+  color: lightblue;
 }
 
-h4{
-    text-decoration: none;
-    color: black;
-    padding: 20px;
-    margin: 10px;
-    border: 2px solid blue;
-    border-radius: 35px;
-    background-color: lightblue;
-    display: inline-block;
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  a {
+    flex-direction: column;
+  }
+  body {
+    flex-direction: column;
+    background-color: blueviolet;
+  }
+}
+@media screen and (max-width: 480px) {
+  header {
+    flex-direction: column;
+  }
+  a {
+    flex-direction: column;
+  }
+  body {
+    flex-direction: column;
+    background-color: darkgreen;
+  }
 }
 
-.img_logo{
-    border: blue 5px solid;
-    border-radius: 50px;
-    padding: 2px;
-    width: 250px;
-}
-ul{
-    list-style-type: none;
-    padding: 20px;
-}
-li{
-    padding: 10px;
-    text-align: center;
-    margin: 5px;
-    display: inline-block;
-}
-a{
-    text-decoration: none;
-    color: black;
-    padding: 10px;
-    color: black;
-    border-radius: 35px;
-    background-color: lightblue;
-    text-align: center;
-}
-.caja{
-    display: inline-block;
-    width: 25%;
-    height: 100%;
-    background-color: white;
-    border: 2px solid black;
-    text-align: center;
-    line-height: 100px;
-}
-.contenedor{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 10px;
-    padding: 10px;
-    box-sizing: border-box;
-}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,90 @@
+header{
+    display: flex;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    div{
+      display: flex;
+      justify-content: center;
+      .img_logo{
+        border: blue 5px solid;
+        border-radius: 50px;
+        padding: 2px;
+        width: 250px;
+        &:hover{
+          border: white 5px solid;
+        }
+      }
+    }
+    h1{
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+      border-radius: 35%;
+      padding: 20px;
+    }
+    nav{
+      ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style-type: none;
+        padding: 20px;
+        li{
+          padding: 10px;
+          text-align: center;
+          margin: 5px;
+          display: inline-block;
+          a{
+            display: flex;
+            text-decoration: none;
+            padding: 10px;
+            color:black;
+            border-radius: 35px;
+            background-color: lightblue;
+            text-align: center;
+            &:hover{
+              background-color: blue;
+              color: white;
+              border-radius: 20px;
+            }
+          }
+        }
+      }
+    }
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    input{
+      padding: 10px;
+      margin: 10px;
+      border-radius: 10px;
+      border: none;
+      width: 50%;
+    }
+    button{
+      padding: 10px;
+      margin: 10px;
+      border-radius: 10px;
+      border: none;
+      background-color: lightblue;
+      color: black;
+      &:hover{
+        background-color: blue;
+        color: white;
+      }
+    }
+  }
+  section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p{
+      font-size: 20px;
+      margin: 20px;
+      padding: 10px;
+    }
+}
